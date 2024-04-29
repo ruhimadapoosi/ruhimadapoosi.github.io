@@ -10,13 +10,13 @@ function preload() {
 // preload() runs once, it may make you wait
 //  img = loadImage('cat.jpg');  // cat.jpg needs to be next to this .js file
 // you can link to an image on your github account
-  bee = loadImage('ruhimadapoosi.github.io/dmagame/bee.png');
-  bg1 = loadImage('ruhimadapoosi.github.io/dmagame/lv1bg.png');
-  bg2 = loadImage('ruhimadapoosi.github.io/dmagame/lv1bg2.png');
-  bg3 = loadImage('ruhimadapoosi.github.io/dmagame/lv2bg.png');
-  bg4 = loadImage('ruhimadapoosi.github.io/dmagame/lv2bg2.png');
-  bg5 = loadImage('ruhimadapoosi.github.io/dmagame/lv3bg.png');
-  bg6 = loadImage('ruhimadapoosi.github.io/dmagame/lv3bg2.png');
+  bee = loadImage('https://ruhimadapoosi.github.io/dmagame/bee.png');
+  bg1 = loadImage('https://ruhimadapoosi.github.io/dmagame/lv1bg.png');
+  bg2 = loadImage('https://ruhimadapoosi.github.io/dmagame/lv1bg2.png');
+  bg3 = loadImage('https://ruhimadapoosi.github.io/dmagame/lv2bg.png');
+  bg4 = loadImage('https://ruhimadapoosi.github.io/dmagame/lv2bg2.png');
+  bg5 = loadImage('https://ruhimadapoosi.github.io/dmagame/lv3bg.png');
+  bg6 = loadImage('https://ruhimadapoosi.github.io/dmagame/lv3bg2.png');
 
 }
 
