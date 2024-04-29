@@ -13,9 +13,9 @@ function preload() {
   bee = loadImage('bee.png');
   bg1 = loadImage('lv1bg.png');
   bg2 = loadImage('lv1bg2.png');
-  bg3 = loadImage('lv2bg1.png');
+  bg3 = loadImage('lv2bg.png');
   bg4 = loadImage('lv2bg2.png');
-  bg5 = loadImage('lv3bg1.png');
+  bg5 = loadImage('lv3bg.png');
   bg6 = loadImage('lv3bg2.png');
 
 }
