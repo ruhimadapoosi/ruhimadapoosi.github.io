@@ -190,13 +190,13 @@ function draw() {
  //hair front
  image(hairf[currenthair], 200, 100, 279, 534);
  
- //tops
- image(tops[currenttops], 200, 100, 279, 534);
-
  //bottom
  if (bottom[currentbottom] !== null) {
      image(bottom[currentbottom], 200, 100, 279, 534);} 
 
+ //tops
+ image(tops[currenttops], 200, 100, 279, 534);
+ 
  //back buddy hat
  if (buddyhatb[currentbuddyhat] !== null) {
     image(buddyhatb[currentbuddyhat], 500, 350, 222, 273);}
