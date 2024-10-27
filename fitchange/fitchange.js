@@ -58,7 +58,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(698,1440);
+  createCanvas(209,432);
 
 }
 
@@ -66,26 +66,25 @@ function setup() {
 function draw() {
    background(255, 254, 238);
   // bow
-  image(bow[currenttops], 0, 0, 698, 1440);
+  image(bow[currenttops], 0, 0, 209,432);
   
   // hair back
- image(hairb[currenthair], 0, 0, 698, 1440);
+ image(hairb[currenthair], 0, 0, 209,432);
 
  //base 
- image(base, 0, 0, 698, 1440);
+ image(base, 0, 0, 209,432);
   
  //bottom
- image(bottom[currentbottom], 0, 0, 698, 1440);
+ image(bottom[currentbottom], 0, 0, 209,432);
 
  //tops
- image(tops[currenttops], 0, 0, 698, 1440);
+ image(tops[currenttops], 0, 0, 209,432);
  
   //hair front
- image(hairf[currenthair], 0, 0, 698, 1440);
+ image(hairf[currenthair], 0, 0, 209,432);
 
  //accessories 
-  image(accessories, 0, 0, 698, 1440);
-
+  image(accessories, 0, 0, 209,432);
 } 
 
 //changes + looping arrays
@@ -111,15 +110,15 @@ function bottomchange () {
 function mousePressed () {
  
   //hair change
-  if (mouseX > 200 && mouseX < 550 && mouseY > 100 && mouseY < 500){
+  if (mouseX > 50 && mouseX < 170 && mouseY > 30 && mouseY < 150){
      hairchange (); 
     }
   //tops change
-  if (mouseX > 200 && mouseX < 550 && mouseY > 500 && mouseY < 800){
+  if (mouseX > 70 && mouseX < 150 && mouseY > 150 && mouseY < 230){
      topschange (); 
     }
   //bottom change
-  if (mouseX > 200 && mouseX < 550 && mouseY > 800 && mouseY < 1300){
+  if (mouseX > 70 && mouseX < 150 && mouseY > 230 && mouseY < 380){
      bottomchange (); 
     }
 
