@@ -18,7 +18,7 @@ var currentbottom = 0;
 
 function preload() {
  //base
- base0 = loadImage("base_01.png");
+ base = loadImage("base_01.png");
 
  //bow
  bow0 = loadImage("bow_01.png");
@@ -49,7 +49,7 @@ function preload() {
 
 
 //array for items
-   base = [base0,base1,base2];
+   bow = [bow0, bow1, bow2];
    hairf = [hairf0, hairf1, hairf2];
    hairb = [hairb0, hairb1, hairb2];
    tops = [tops0, tops1, tops2];
@@ -64,6 +64,7 @@ function setup() {
 
 
 function draw() {
+   background(255, 254, 238);
   // bow
   image(bow[currenttops], 0, 0, 698, 1440);
   
@@ -71,20 +72,21 @@ function draw() {
  image(hairb[currenthair], 0, 0, 698, 1440);
 
  //base 
- image(base[currentbase], 0, 0, 698, 1440);
- 
- //hair front
- image(hairf[currenthair], 0, 0, 698, 1440);
- 
+ image(base, 0, 0, 698, 1440);
+  
  //bottom
- if (bottom[currentbottom] !== null) {
-     image(bottom[currentbottom], 0, 0, 698, 1440);} 
+ image(bottom[currentbottom], 0, 0, 698, 1440);
 
  //tops
  image(tops[currenttops], 0, 0, 698, 1440);
  
+  //hair front
+ image(hairf[currenthair], 0, 0, 698, 1440);
+
  //accessories 
   image(accessories, 0, 0, 698, 1440);
+
+} 
 
 //changes + looping arrays
 function hairchange () {
@@ -95,32 +97,30 @@ function hairchange () {
 }
 function topschange () {
     currenttops = currenttops + 1;
-    if (currenttops == 11) {
+    if (currenttops == 3) {
     currenttops = 0;
     }
 }
 function bottomchange () {
     currentbottom = currentbottom + 1;
-    if (currentbottom == 9) {
+    if (currentbottom == 3) {
     currentbottom = 0;
     }
 }
-
 //limited box for item change clicks
 function mousePressed () {
  
   //hair change
-  if (mouseX > 100 && mouseX < 150 && mouseY > 200 && mouseY < 250){
+  if (mouseX > 200 && mouseX < 550 && mouseY > 100 && mouseY < 500){
      hairchange (); 
     }
   //tops change
-  if (mouseX > 100 && mouseX < 150 && mouseY > 300 && mouseY < 350){
+  if (mouseX > 200 && mouseX < 550 && mouseY > 500 && mouseY < 800){
      topschange (); 
     }
   //bottom change
-  if (mouseX > 100 && mouseX < 150 && mouseY > 400 && mouseY < 450){
+  if (mouseX > 200 && mouseX < 550 && mouseY > 800 && mouseY < 1300){
      bottomchange (); 
     }
 
-}
 }
