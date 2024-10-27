@@ -45,6 +45,25 @@
    margin-left: -16px;}
    }
 
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container > div {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.footer {
+   width: 100%;
+   background-color: ivory;
+   color: RebeccaPurple;
+   text-align: center;
+}
+
   </style>
 
 <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
@@ -78,15 +97,26 @@
   </div>
 </nav>
 
-<div class="container-fluid p-5 bg-muted text-center">
+<div class="container p-5 bg-muted text-center">
 
   <h1 style="color:RebeccaPurple;">About Me;</h1>
+</div> 
+
+<div class="flex-container p-5 bg-muted text-center">
+
+      <div>
+
+<img class="img-fluid" src="rm.png" data-bs-toggle="tooltip" title="click me!" width=200>
+
+        </div>
+  <div>
 <p>
 
-<img class="img-fluid" src="rm.png" data-bs-toggle="tooltip" title="it's a work in progress, sorry <3" width=200>
-
+        Hi, I'm Ruhi, currently 4th year Animation/Illustration student at San Jose State University! <br> I'm a lover of girl groups, comics, and silly games.<br>
 </p>
 
+        </div>
+</div>
 </div>
 
 <script>
@@ -96,6 +126,11 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 })
 </script>
 
+<div class="footer">
+  <p>
+    <a href="mailto: ruhi.madapoosi@gmail.com">ruhi.madapoosi@gmail.com</a>
+  </p>
+</div>
 
 </body>
 </html>
