@@ -7,7 +7,14 @@
 <meta charset="utf-8">
 <!-- Latest compiled and minified CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"  rel="stylesheet">
+
 <link href='https://fonts.googleapis.com/css?family=Margarine' rel='stylesheet'>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 
 <!-- Latest compiled JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -18,10 +25,29 @@
 <body>
 
  <style>
- body {background-color: ivory; text-align: center; font-family: 'Margarine';}
-.navbar-custom {background-color: Plum}
+
+.jua-regular {
+  font-family: "Jua", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ body {background-color: ivory; text-align: center; font-family: "Jua", serif;}
+.navbar-custom {background-color: Plum;   font-size: 20px;}
 .navbar-custom .navbar-nav .nav-link {color: RebeccaPurple}
 .navbar-custom .navbar-nav .nav-link:hover {color: DeepPink}
+
+
+.header {
+  overflow: hidden;
+  background-color: plum;
+  padding-top: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: 'Margarine';
+}
 
 .dropdown-menu {
   background-color: Plum;
@@ -44,6 +70,65 @@
    @media (min-width: 992px) {
    margin-left: -16px;}
    }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+
+}
+
+.column {
+  flex: 33%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 50%;
+
+}
+
+.item {
+  order: 3;
+}
+
+.flex-container > div {
+  position: relative;
+  overflow: hidden;
+  flex-grow:3
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
 .footer {
    width: 100%;
    background-color: ivory;
@@ -51,7 +136,19 @@
    text-align: center;
 }
 
+.fa-instagram {
+  background: #f40083;
+  color: white;
+  width: 20px;
+  padding: 3px;
+  text-decoration: none;
+}
+
   </style>
+
+<div class="header">
+  <h1 style="color:Ivory;">&#10047; Ruhi Madapoosi &#10047; </h1>
+</div>
 
 <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
    <div class="container-fluid justify-content-center collapse navbar-collapse">
@@ -65,9 +162,8 @@
       <li class="nav-item">
         <a class="nav-link" href="personal.html">Personal</a>
       </li>
-        <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link" href="aboutme.html">About Me</a>
-      </li>
       </li>
     </ul>
   </div>
@@ -75,18 +171,61 @@
 
 <div class="container-fluid p-5 bg-muted text-center">
 
-  <h1 style="color:RebeccaPurple;">Personal;</h1>
+  <h1 style="color:RebeccaPurple;">Illustration</h1>
 <p>
-
-WIP
-
+some posters and illustrations
+<div class="row">
+  <div class="column">
+    <img src="personal/SpringStudyDayPoster_Final.png">
+  </div>
+  <div class="column">
+    <img src="illustration/PineconeRenderFinal.png">
+    <img src="illustration/test.png">
+  </div>
+  <div class="column">
+    <img src="personal/24HRSpeedrunPoster_noLogo.png">
+  </div>
 </p>
+</div>
 
+<div class="container-fluid p-5 bg-muted text-center">
+  <h1 style="color:RebeccaPurple;">Studies</h1>
+<p>
+Digital and Gouache Studies
+<div class="row">
+  <div class="column">
+    <img src="personal/PK_Lomo_Swan_02.png">
+  </div>
+  <div class="column">
+    <img src="personal/Week_1_02_01.JPG">
+  </div>
+  <div class="column">
+    <img src="personal/TS2.png">
+  </div>
+</p>
+</div>
+
+<div class="container-fluid p-5 bg-muted text-center">
+  <h1 style="color:RebeccaPurple;">Social Media Graphics</h1>
+<p>
+Various Social Media Graphics
+<div class="row">
+  <div class="column">
+    <img src="personal/Madapoosi_Ruhi_WellnessWeek_CCCosyCraftsPoster.png">
+  </div>
+  <div class="column">
+    <img src="personal/1.png">
+  </div>
+  <div class="column">
+    <img src="personal/DD_KickstarterFunding_100Funded.png">
+  </div>
+</p>
 </div>
 
 <div class="footer">
   <p>
     <a href="mailto: ruhi.madapoosi@gmail.com">ruhi.madapoosi@gmail.com</a>
+    <a href="https://www.instagram.com/mi.magni/" class="fa fa-instagram"></a>
   </p>
 </div>
 
