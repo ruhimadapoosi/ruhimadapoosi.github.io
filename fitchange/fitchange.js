@@ -29,31 +29,35 @@ function preload() {
  hairf0 = loadImage("hair_01_front.png");
  hairf1 = loadImage("hair_02_front.png");
  hairf2 = loadImage("hair_03_front.png");
+ hairf3 = loadImage("hair_04_front.png");
  
  hairb0 = loadImage("hair_01_back.png");
  hairb1 = loadImage("hair_02_back.png");
  hairb2 = loadImage("hair_03_back.png");
+ hairb3 = loadImage("hair_04_back.png");
 
  //tops
  tops0 = loadImage("top_01.png");
  tops1 = loadImage("top_02.png");
  tops2 = loadImage("top_03.png");
+ tops3 = loadImage("top_04.png");
 
  //bottoms
  bottom0 = loadImage("bottom_01.png");
  bottom1 = loadImage("bottom_02.png");
  bottom2 = loadImage("bottom_03.png");
+ bottom3 = loadImage("bottom_04.png");
 
 //accessories 
  accessories = loadImage("accessories.png");
 
 
 //array for items
-   bow = [bow0, bow1, bow2];
-   hairf = [hairf0, hairf1, hairf2];
-   hairb = [hairb0, hairb1, hairb2];
-   tops = [tops0, tops1, tops2];
-   bottom = [bottom0, bottom1, bottom2];
+   bow = [bow0, bow1, bow2, bow2];
+   hairf = [hairf0, hairf1, hairf2, hairf3];
+   hairb = [hairb0, hairb1, hairb2, hairb3];
+   tops = [tops0, tops1, tops2, tops3];
+   bottom = [bottom0, bottom1, bottom2, bottom3];
    
 }
 
@@ -90,19 +94,19 @@ function draw() {
 //changes + looping arrays
 function hairchange () {
     currenthair = currenthair + 1;
-    if (currenthair == 3) {
+    if (currenthair == 4) {
     currenthair = 0;
     }
 }
 function topschange () {
     currenttops = currenttops + 1;
-    if (currenttops == 3) {
+    if (currenttops == 4) {
     currenttops = 0;
     }
 }
 function bottomchange () {
     currentbottom = currentbottom + 1;
-    if (currentbottom == 3) {
+    if (currentbottom == 4) {
     currentbottom = 0;
     }
 }
