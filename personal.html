@@ -2,170 +2,48 @@
 <html>
 <head>
 
-<title>Personal</title>
-
 <meta charset="utf-8">
-<!-- Latest compiled and minified CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"  rel="stylesheet">
-
-<link href='https://fonts.googleapis.com/css?family=Margarine' rel='stylesheet'>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-
-<!-- Latest compiled JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<title>Personal</title>
+
+
+<!-- Latest compiled and minified CSS ----------------------------------->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"  rel="stylesheet">
+
+<!-- fonts------------------------------------------------------------>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Margarine&display=swap" rel="stylesheet">
+
+<!-- Latest compiled JavaScript --------------------------------------->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- FOR SOCIAL MEDIA LOGOS ---------------------------------->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <!--FAVICON ---------------------------------------------------------->
 <link rel="icon" type="image/png" href="favicon.png">
 
+<link rel="stylesheet" href="css/styles.css">
+
+
 </head>
+
+
 <body>
 
- <style>
+<!-- header start ---------------------------------------------------->
+<header class="header">
+  <h1>&#10047; Ruhi Madapoosi &#10047; </h1>
+</header>
 
-.jua-regular {
-  font-family: "Jua", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-body {
-  background-color: ivory; 
-  text-align: center; 
-  font-family: "Jua", serif;
-  cursor: url('cursor.png'),auto;
-  cursor: url('cursor.png'),default;
-  cursor: url('cursor.png'),context-menu;
-  
-}
-
-.navbar-custom {background-color: Plum;   font-size: 20px;}
-.navbar-custom .navbar-nav .nav-link {color: RebeccaPurple}
-.navbar-custom .navbar-nav .nav-link:hover {color: DeepPink}
-
-
-.header {
-  overflow: hidden;
-  background-color: plum;
-  padding-top: 20px;
-}
-
-h1 {
-  font-size: 40px;
-  font-family: 'Margarine';
-}
-
-.dropdown-menu {
-  background-color: Plum;
-  color: RebeccaPurple;
-  text-align: center;}
-
-.dropdown-menu .dropdown-item {
-  color: RebeccaPurple;}
-
-.dropdown-menu a:hover {
-  color: DeepPink;
-  background-color: Plum}
-
-.navbar-nav .dropdown {
-    display: flex;
-    align-items: center;
-    cursor: pointer;}
-
-.navbar-nav .dropdown-toggle.caret {
-   @media (min-width: 992px) {
-   margin-left: -16px;}
-   }
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-
-}
-
-.column {
-  /* display: flex; */
-  flex: 33%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  width: 50%;
-}
-
-.item {
-  order: 3;
-}
-
-.flex-container > div {
-  position: relative;
-  overflow: hidden;
-  flex-grow:3
-}
-
-@media (max-width: 800px) {
-  .flex-container {
-    flex-direction: column;
-  }
-}
-
-.footer {
-   width: 100%;
-   background-color: ivory;
-   color: RebeccaPurple;
-   text-align: center;
-}
-
-.fa-instagram {
-  background: #f40083;
-  color: white;
-  width: 20px;
-  padding: 3px;
-  text-decoration: none;
-}
-
-  </style>
-
-<div class="header">
-  <h1 style="color:Ivory;">&#10047; Ruhi Madapoosi &#10047; </h1>
-</div>
-
+<!-- navbar start ---------------------------------------------------->
 <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
   <div class="container-fluid justify-content-center collapse navbar-collapse">
    <ul class="navbar-nav" >
      <li class="nav-item">
-       <a class="nav-link" href="index.htm">Home</a>
+       <a class="nav-link" href="index.html">Home</a>
      </li>
      <li class="nav-item">
        <a class="nav-link" href="visdev.html">Visdev</a>
@@ -185,28 +63,48 @@ h1 {
 
 <div class="container-fluid p-5 bg-muted text-center">
 
-  <h1 style="color:RebeccaPurple;">Personal</h1>
+  <h2>Personal</h2>
 <p>
 some posters, illustration and 3d work
-<div class="row">
-  <div class="column">
+<div class="personal-container">
+  <div class="personal-column">
+    <div class="personal-item">
     <img src="personal/SpringStudyDayPoster_Final.png">
+    </div>
+    <div class="personal-item">
     <img src="personal/Madapoosi_Ruhi_WellnessWeek_CCCosyCraftsPoster.png">
+    </div>
+    <div class="personal-item">
     <img src="personal/1.png">
-
+    </div>
   </div>
-  <div class="column">
-    <img src="personal/MadRuhi_ZbrushSpread_01.jpg">
-    <img src="personal/3.png">
+  <div class="personal-column">
+    <div class="personal-item">
     <img src="personal/Week_1_02_01.JPG" class="img-fluid">
+    </div>
+    <div class="personal-item">
     <img src="personal/TS2.jpg" class="img-fluid">
-  </div>
-  <div class="column">
+    </div>
+        <div class="personal-item">
+    <img src="personal/hydrate.png">
+    </div>
+            <!-- <div class="personal-item">
+    <img src="personal/PineconeRenderFinal.png">
+    </div> -->
+    </div>
+  <div class="personal-column">
+    <div class="personal-item">
     <img src="personal/24HRSpeedrunPoster_noLogo.png">
+    </div>
+    <div class="personal-item">
     <img src="personal/huh.png">
+    </div>
+    <div class="personal-item">
     <img src="personal/DD_KickstarterFunding_100Funded.png">
-
+    </div>
+   </div>
   </div>
+
     </p> 
   </div>
  
@@ -215,12 +113,18 @@ some posters, illustration and 3d work
 </p>
 </div>
 
-<div class="footer">
-  <p>
+<!-- footer start ---------------------------------------------------->
+
+<footer>
+  <ul class="socials">
+  <li>
     <a href="mailto: ruhi.madapoosi@gmail.com">ruhi.madapoosi@gmail.com</a>
+  </li>
+  <li>
     <a href="https://www.instagram.com/mi.magni/" class="fa fa-instagram"></a>
-  </p>
-</div>
+  </li>
+</ul>
+</footer>
 
 </body>
 </html>
