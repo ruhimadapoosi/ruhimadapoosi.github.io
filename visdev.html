@@ -22,10 +22,13 @@
 <!-- FOR SOCIAL MEDIA LOGOS ---------------------------------->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+ <!--CSS SHEET LINKS ----------------------------------------->
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/modal.css">
+
+
  <!--FAVICON ---------------------------------------------------------->
 <link rel="icon" type="image/png" href="favicon.png">
-
-<link rel="stylesheet" href="css/styles.css">
 
 </head>
 
@@ -70,58 +73,74 @@
 <p>
 Various work from my classes
 <div class="row">
-    <img src="visdev/MadapoosiRuhi_StoryMoment_2.png">
+    <img class="modImages" src="visdev/MadapoosiRuhi_StoryMoment_2.png">
 </div>
 <div class="row">
     <div class="column">
-        <img src="visdev/finalspring.png">
+        <img class="modImages" src="visdev/finalspring.png">
       </div>
       <div class="column">
-        <img src="visdev/finalwinter.png">
+        <img class="modImages" src="visdev/finalwinter.png">
     </div>
 </div>
 <div class="row">
     <div class="column">
-        <img src="visdev/portfoliopage_01.png">
+        <img class="modImages" src="visdev/portfoliopage_01.png">
       </div>
       <div class="column">
-        <img src="visdev/portfoliopage_04.png">
+        <img class="modImages" src="visdev/portfoliopage_04.png">
     </div>
 </div>
 <br> 
 <div class="row">
-    <img src="visdev/MarketConcept_Proofs_02.png">
+    <img class="modImages" src="visdev/MarketConcept_Proofs_02.png">
 </div>
 <div class="row">
     <div class="column">
-        <img src="visdev/CaravanConcept_Final_02.png">
-      </div>
+        <img class="modImages" id="myImg" src="visdev/CaravanConcept_Final_02.png">
+    </div>
       <div class="column">
-        <img src="visdev/MadapoosiRuhi_Project1FNL.jpg">
+        <img class="modImages" src="visdev/MadapoosiRuhi_Project1FNL.jpg">
     </div>
 </div>
 </p>
 
-
 <div class="row">
-    <img src="visdev/CharaB.png">
+    <img class="modImages"src="visdev/CharaB.png">
 </div>
 
 </div>
 
+<!-- The Modal -------------------------------------------------->
+<div id="myModal" class="modal">
+<!-- The Close Button -->
+<span class="close">&times;</span>
+<!-- Modal Content (The Image) -->
+<img class="modal-content" id="img01" src="">
+</div>
 
 <!-- footer start ---------------------------------------------------->
+
 
 <footer>
   <ul class="socials">
   <li>
-    <a href="mailto: ruhi.madapoosi@gmail.com">ruhi.madapoosi@gmail.com</a>
+    <a href="mailto: ruhi.madapoosi@gmail.com" class="fa fa-envelope"></a>
   </li>
   <li>
     <a href="https://www.instagram.com/mi.magni/" class="fa fa-instagram" target="_blank"></a>
   </li>
+  <li>
+    <a href="www.linkedin.com/in/ruhi-madapoosi-b2548a255" class="fa fa-linkedin" target="_blank"></a>
+  </li>
 </ul>
 </footer>
-
 </body>
+
+
+<!--JS SHEET LINKS --------------------------------------------->
+<script language="javascript" type="text/javascript" src="js/cursoreffect.js"></script>
+<script language="javascript" type="text/javascript" src="js/modal.js"></script>
+
+
 </html>

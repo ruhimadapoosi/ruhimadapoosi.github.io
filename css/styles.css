@@ -37,7 +37,7 @@ h2 {
 .header {
   overflow: hidden;
   padding-top: 20px;
-  background: url("../bg.png"); 
+  background: url("../home-img/bg.png"); 
 
 
 }
@@ -48,7 +48,11 @@ h2 {
     width: 15rem;
 }
  
-
+@media (max-width: 600px) {
+ .logo-fullname {
+  width: 40vw;
+ }
+}
 /* navbar ---------------------------------------------------------------*/
 
 .navbar-custom {
@@ -110,22 +114,54 @@ h2 {
 
 
 /* home page ----------------------------------------------------------*/
+.homebtns {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  padding: 1rem 0 0 0;
+}
+
 .homebtn {
  text-decoration: none;
+ padding: 3px;
+
 }
 
 .homebtn img {
      clip-path: circle(50%);
+     width: 20vw;
+
+}
+
+@media (min-width: 1000px) {
+ .homebtn img {
+  width: 200px;
+ }
 }
 
 .homebtn:hover img {
     transform: scale(1.05);
     filter: saturate(120%) brightness(120%);
 }
+
+
+.home-img {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  max-width: 99vw;
+}
+
+/* .home-img div {
+      flex: 1 0 auto;
+
+} */
 /* body ---------------------------------------------------------------*/
 
  body {
-  background-color: ivory; 
+  background-color: rgb(255, 255, 211); 
   text-align: center; 
   font-family: "Jua", serif;
   color: #98678E;
@@ -133,9 +169,6 @@ h2 {
 
 }
 
-a:hover {
-    cursor:pointer url ('../cursor3.png');
-}
 
 .flex-container {
   display: flex;
@@ -148,22 +181,9 @@ a:hover {
 }
 
 .flex-container > div {
-  font-size: 20px;
   position: relative;
-  width: 500;
   overflow: hidden;
-  width: 230px;
-  flex-grow:3
-}
-
-.responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
+  width: 90vw;
 }
 
 .row {
@@ -171,12 +191,16 @@ a:hover {
   display: flex;
   -ms-flex-wrap: wrap; 
   flex-wrap: wrap;
-  padding: 0 4px;
 }
+
 .column {
+  display: flex;
+  flex-direction: column;
   flex: 50%;
   max-width: 50%;
   padding: 0 4px;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .column img {
@@ -187,22 +211,17 @@ a:hover {
 
 @media screen and (max-width: 800px) {
   .column {
-    flex: 50%;
     max-width: 50%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .column {
-    flex: 100%;
     max-width: 100%;
   }
 }
 
-video {
-  width: 70%;
-  height: auto;
-}
+
 
 .backgrounds-container {
     display:inline-grid;
@@ -218,9 +237,20 @@ video {
   height: auto;
 }
 
+.vidcontainer {
+  display:block;
+  justify-content: center;
+
+}
+
+video {
+  width: 70vw;
+  height: auto;
+}
+
+
 .personal-container {
     display:flex;
-    gap: 10px;
     flex-basis:0;
 }
 
@@ -228,15 +258,67 @@ video {
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 10px;
+}
+
+.personal-item {
+      width: 30vw;
 }
 
 .personal-item img{
   width: 100%;
   height: auto;
+  padding: 0.3rem;
+
 }
 
-/* buttons -------------------------------------------------------------*/
+
+@media screen and (max-width: 600px) {
+  .personal-container {
+    display: inline-block;
+  }
+  .personal-item {
+      width: 70vw;
+}
+
+}
+
+/* about me -------------------------------------------------------------*/
+
+.aboutme {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  padding: 5rem 0 0 0;
+  gap: 2rem;
+}
+
+  .aboutme p {
+    max-width: 50vw;
+  }
+
+  .tinytext {
+    font-size: 0.7rem;
+    margin-top: -1rem;
+  }
+  
+@media screen and (min-width: 1000px) {
+  .aboutme p {
+    max-width: 30vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aboutme {
+    flex-direction: column;  
+  }
+    .aboutme p {
+    max-width: 80vw;
+  }
+
+
+}
+
+
 .btn {
     background: #e45585;
     color: #f6f6f6;
@@ -267,7 +349,7 @@ transform: scale(1.05);
 .footer {
    width: 100%;
    color: RebeccaPurple;
-   text-align: center;
+   margin-top: 1rem;
 }
 
 .socials {
@@ -276,14 +358,28 @@ transform: scale(1.05);
 }
 .socials li {
     display: inline-block;
-    margin-left: 10px;
+}
+
+.fa-envelope {
+  background: #98678E;
+  color:  #FFECA3;
+  text-decoration: none;
+  padding: 3px;
+  font-size: 1rem;
 }
 
 .fa-instagram {
-  background: #f40083;
+  background: #D4215C;
   color: white;
-  width: 20px;
   padding: 3px;
   text-decoration: none;
 }
 
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  text-decoration: none;
+  width: 20px;
+  padding: 3px;
+
+}

@@ -20,14 +20,12 @@
 <!-- FOR SOCIAL MEDIA LOGOS ---------------------------------->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!--tinkerbell mouse code --------------------------------------------->
-<script language="javascript" type="text/javascript" src="cursoreffect.js"></script>
+<!--CSS SHEET LINKS ----------------------------------------->
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/modal.css">
 
  <!--FAVICON ---------------------------------------------------------->
 <link rel="icon" type="image/png" href="favicon.png">
-
-<link rel="stylesheet" href="css/styles.css">
-
 
 </head>
 
@@ -64,23 +62,63 @@
 <body>
 
 
-<div class="container-fluid p-5 bg-muted text-center">
+<section class="homebtns">
 
 <p>
       <a class="homebtn" href="visdev.html">
-        <img src="btn_visdev.png" alt="Visdev Button" width=200/>
+        <img src="home-img/btn_visdev.png" alt="Visdev Button"/>
       </a>
      <a class="homebtn" href="project.html">
-        <img src="btn_project.png" alt="Projects Button" width=200/>
+        <img src="home-img/btn_project.png" alt="Projects Button"/>
      </a>
      <a class="homebtn" href="personal.html">
-        <img src="btn_personal.png" alt="Personal Button" width=200 />
+        <img src="home-img/btn_personal.png" alt="Personal Button" />
      </a>
      <a class="homebtn" href="aboutme.html">
-      <img src="btn_about.png" alt="About Me Button" width=200/>
+      <img src="home-img/btn_about.png" alt="About Me Button"/>
    </a>
 </p>
-</div>
+</section>
+
+<section class="flex-container">
+      <div class="row">
+      <img class="modImages" src="visdev/MadapoosiRuhi_StoryMoment_2.png">
+      </div> 
+      <div class="row"> 
+      <img class="modImages" src="visdev/portfoliopage_04.png">
+      </div> 
+
+      <div class="row">
+      <div class="column">
+      <img class="modImages" src="personal/24HRSpeedrunPoster_noLogo.png">
+      </div>   
+      <div class="column"> 
+              <div class="row"> 
+              <img class="modImages" src="project/loonario_tote.png">
+              </div>
+              <div class="row"> 
+              <img class="modImages" src="personal/PineconeRenderFinal.png">
+              </div>
+      </div>
+      </div>
+
+      <div class="row">
+      <div class="column">
+      <img class="modImages" src="personal/Week_1_02_01.JPG">
+      </div>   
+      <div class="column"> 
+      <img class="modImages" src="visdev/CaravanConcept_Final_02.png">
+      </div>
+      </div>
+      <div class="row">
+      <img class="modImages" src="visdev/MarketConcept_Proofs_02.png">
+      </div>
+
+
+</section>
+
+
+
 
 <script>
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
@@ -89,18 +127,56 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 })
 </script>
 
+
+
+<section class="homebtns">
+
+<p>
+      <a class="homebtn" href="visdev.html">
+        <img src="home-img/btn_visdev.png" alt="Visdev Button"/>
+      </a>
+     <a class="homebtn" href="project.html">
+        <img src="home-img/btn_project.png" alt="Projects Button"/>
+     </a>
+     <a class="homebtn" href="personal.html">
+        <img src="home-img/btn_personal.png" alt="Personal Button" />
+     </a>
+     <a class="homebtn" href="aboutme.html">
+      <img src="home-img/btn_about.png" alt="About Me Button"/>
+   </a>
+</p>
+</section>
+
+<!-- The Modal -------------------------------------------------->
+<div id="myModal" class="modal">
+<!-- The Close Button -->
+<span class="close">&times;</span>
+<!-- Modal Content (The Image) -->
+<img class="modal-content" id="img01" src="">
+</div>
+
+
 <!-- footer start ---------------------------------------------------->
+
 
 <footer>
   <ul class="socials">
   <li>
-    <a href="mailto: ruhi.madapoosi@gmail.com">ruhi.madapoosi@gmail.com</a>
+    <a href="mailto: ruhi.madapoosi@gmail.com" class="fa fa-envelope"></a>
   </li>
   <li>
     <a href="https://www.instagram.com/mi.magni/" class="fa fa-instagram" target="_blank"></a>
   </li>
+  <li>
+    <a href="www.linkedin.com/in/ruhi-madapoosi-b2548a255" class="fa fa-linkedin" target="_blank"></a>
+  </li>
 </ul>
 </footer>
-
 </body>
+
+
+<!--JS SHEET LINKS --------------------------------------------->
+<script language="javascript" type="text/javascript" src="js/cursoreffect.js"></script>
+<script language="javascript" type="text/javascript" src="js/modal.js"></script>
+
 </html>

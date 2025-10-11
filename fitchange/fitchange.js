@@ -69,7 +69,7 @@ function setup() {
 
 
 function draw() {
-   background(255, 254, 238);
+   background(255, 255, 211);
   // bow
   image(bow[currenttops], 0, 0, 209,432);
   
