@@ -53,11 +53,23 @@ h2 {
   width: 40vw;
  }
 }
+
+ @media (max-width: 500px) {
+h1 {
+  font-size: 10vw;
+  font-family: 'Margarine';
+  color:#D4215C;
+}
+
+
+ }
+
 /* navbar ---------------------------------------------------------------*/
 
 .navbar-custom {
     background-color:#FFECA3;   
     font-size: 20px;
+    border: ascii;
     border-style: dotted none none none;
     border-color: #98678E;
     border-width: 5px;
@@ -320,8 +332,8 @@ video {
 
 
 .btn {
-    background: #e45585;
-    color: #f6f6f6;
+  background-color: #98678E;
+  color:  #FFE072;
     text-decoration: none;
     font-size: 1.2rem;
     display: inline-block;
@@ -332,16 +344,16 @@ video {
 
 .download-link {
     position:fixed;
-    bottom: 5px;
-    left: 5px;
+    bottom: 1rem;
+    left: 1rem;
     font-size: 1rem;
 }
 
 .download-link:hover{
-background-color: #98678E;
-color:  #FFE072;
-transform: scale(1.05);
-
+    background: #e45585;
+    color: #f6f6f6;
+    transform: scale(1.05);
+    /* font-family: 'Margarine'; */
 }
 
 /* footer ---------------------------------------------------------------*/
@@ -360,6 +372,9 @@ transform: scale(1.05);
     display: inline-block;
 }
 
+.fa:hover {
+  transform: scale(1.1);
+}
 .fa-envelope {
   background: #98678E;
   color:  #FFECA3;
@@ -383,3 +398,6 @@ transform: scale(1.05);
   padding: 3px;
 
 }
+
+
+
